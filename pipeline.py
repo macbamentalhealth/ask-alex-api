@@ -2,12 +2,13 @@ import os, re, subprocess
 from dotenv import load_dotenv
 from openai import OpenAI
 from supabase import create_client
+
 load_dotenv()
 SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 CHANNEL_URL = os.environ["CHANNEL_URL"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-openai_client = OpenAI(api_key="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")
+openai_client = OpenAI(api_key="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")
 
 def get_video_ids(channel_url):
     result = subprocess.run(
