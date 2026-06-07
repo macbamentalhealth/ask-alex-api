@@ -7,7 +7,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 CHANNEL_URL = os.environ["CHANNEL_URL"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-openai_client = OpenAI(api_key="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")
+openai_client = OpenAI(api_key="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")
 
 def get_video_ids(channel_url):
     result = subprocess.run(
